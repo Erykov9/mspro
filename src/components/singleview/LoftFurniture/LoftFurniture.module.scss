@@ -1,0 +1,31 @@
+.root {
+  background-image: url("~/public/images/stairs-better.jpg");
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+  top: 0;
+  font-size: 1.3em;
+
+  &__page {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &_card {
+      text-align: center;
+      background-color: rgb(226, 226, 226);
+      opacity: 0.8;
+      padding: 45px 0;
+      margin: 35px 0;
+      width: 100%;
+    }
+
+    &_cardHeader {
+      text-shadow: 2px 2px rgb(110, 110, 110);
+    }
+  }
+}

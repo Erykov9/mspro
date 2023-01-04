@@ -9,6 +9,7 @@ import Navigation from "./components/views/Navigation/Navigation";
 import Contact from "./components/views/Contact/Contact";
 import Offert from "./components/views/Offert/Offert";
 import ShelfStairs from "./components/singleview/ShelfStairs/ShelfStairs";
+import LoftFurniture from "./components/singleview/LoftFurniture/LoftFurniture";
 
 function App() {
   const location = window.location.href
@@ -56,6 +57,10 @@ function App() {
     {
       path: '/pl/offert/shelfstairs',
       element: <ShelfStairs/>
+    },
+    {
+      path: '/pl/offert/loftfurniture',
+      element: <LoftFurniture/>
     },
     {
       path: '*',

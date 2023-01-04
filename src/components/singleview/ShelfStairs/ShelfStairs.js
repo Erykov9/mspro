@@ -16,6 +16,7 @@ const ShelfStairs = () => {
         break
       case false:
         setActive(true);
+        setActivePrice(false);
         break
     }
   };
@@ -27,13 +28,14 @@ const ShelfStairs = () => {
         break
       case false: 
         setActivePrice(true)
+        setActive(false)
         break
     }
   }
 
   return (
     <div className={styles.root}>
-      <div className={styles.root__image}>
+      <div className={(activePrice || active) ? styles.minheight : styles.root__image}>
         {/* <img src="/images/stairs-better.jpg"/> */}
         <div className={styles.root__card}>
           <h1>SCHODY PÓŁKOWE</h1>
@@ -49,38 +51,38 @@ const ShelfStairs = () => {
             Oferujemy stopnie stalowe do wykonania konstrukcji
             schodów półkowych. Stopnie te montuje się pojedynczo za
             pomocą prętów gwintowanych (kl. 8.8). Konstrukcję taką
-            najlepiej zamontować przed tynkami/ płytami gk.
+            najlepiej zamontować przed tynkami/ płytami gk.<br/>
 
-            Zamówienie odbywa się według schematu:
+            Zamówienie odbywa się według schematu:<br/><br/>
 
-            Przysyłasz rzuty pięter/ szkic/ zdjęcia z wymiarami klatki
+            1. Przysyłasz rzuty pięter/ szkic/ zdjęcia z wymiarami klatki<br/>
             schodowej.
 
-            Wyliczamy ilość stopni, podajemy ich parametry
-            (wysokość x głębokość x szerokość).
+            2. Wyliczamy ilość stopni, podajemy ich parametry
+            (wysokość x głębokość x szerokość).<br/>
 
-            Akceptacja oferty -&gt; zaliczka -&gt; czas produkcji około 10
-            dni roboczych.
+            3. Akceptacja oferty -&gt; zaliczka -&gt; czas produkcji około 10
+            dni roboczych.<br/>
 
-            Wysyłka razem z instrukcją montażu pod wskazany
-            adres.
+            4. Wysyłka razem z instrukcją montażu pod wskazany
+            adres.<br/>
 
             Ściana do której można zamocować stopnie musi mieć
-            grubość co najmniej:
+            grubość co najmniej:<br/>
 
-            Materiały typu pustak ceramiczny, silikat, gazobeton-
+            - Materiały typu pustak ceramiczny, silikat, gazobeton-
             24cm - w tym przypadku konieczne jest przewiercenie
             ściany na wylot i zastosowanie po drugiej stronie
             podkładek o dużej powierzchni które zmniejszą nacisk
             jednostkowy na ścianę. Posiadamy w ofercie również
             płyty montażowe z otworami pokrywającymi się z tymi w
-            stopniach.
+            stopniach.<br/><br/>
 
-            Żelbet- 18cm- w tym przypadku możemy zamocować
+            - Żelbet- 18cm- w tym przypadku możemy zamocować
             stopnień przy pomocy kotwy chemicznej. Głębokość
-            zakotwienia wg zaleceń producenta kotwy.
+            zakotwienia wg zaleceń producenta kotwy.<br/><br/>
 
-            Bloczek fundamentowy- 24cm- jest to najbardziej
+            - Bloczek fundamentowy- 24cm- jest to najbardziej
             optymalne rozwiązanie. W materiale tym można również
             jak w przypadku żelbetu zamocować stopnie przy pomocy
             kotwy chemicznej. Ma on jednak tą zaletę, że jest
